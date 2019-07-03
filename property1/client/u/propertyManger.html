@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Property Swager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+</head>
+<body>
+    
+<nav class="navbar navbar-default" style="cursor:pointer">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">&nbsp;<strong>Property Swager</strong><span><img width="25" src="../images/mita.png" alt=""></span></a>
+            <!-- <a class="navbar-brand" href="#">&nbsp;<strong>Property Swager</strong></a> -->
+          </div>
+          <ul class="nav navbar-nav">
+            <li id="homeli" class="active"><a onclick="home()">Home</a></li>
+
+
+            
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a href=""><img width="25" src="../images/mita.png" alt=""></a></li>
+            <li><a><img width="25" src="../images/mita.png" alt=""></a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li id="jobsli" onclick="navigate('jobs')"><a>Jobs</a></li> -->
+            <li id="profileli"><a onclick="profile()" href="#">Profile</a></li>
+            <li id="logoutli"><a onclick="logout()"><span class="glyphicon glyphicon-log-in" href="#"></span> Logout</a></li>
+          </ul>
+        </div>
+       </nav>
+
+    <div id="main_body">
+
+    <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+            <div class="col-md-3" id="left_div">
+                <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <!-- <div class="panel panel-info">
+                                <div class="panel-body">
+                                relevant Propertys
+                                </div>
+                            </div> -->
+                            <div class="panel panel-primary">
+                                <div id="allPropertys" onclick="get_all_classes()" class="panel-body">
+                                All Propertys
+                                </div>
+                            </div>
+                            <div class="panel panel-primary">
+                                <div id="requests" onclick="get_dep_acepted_requests()" class="panel-body">
+                                Requests
+                                </div>
+                            </div>
+                            <div class="panel panel-primary">
+                                <div id="customRequests" onclick="custom_request()" class="panel-body">
+                                Custom Requests
+                                </div>
+                            </div>
+                            <div class="panel panel-primary">
+                              <div id="checkOut" onclick="finished_requests()" class="panel-body">
+                                  Check Out
+                              </div>
+                          </div>
+                          <div class="panel panel-primary">
+                            <div id="owned" onclick="owned_property()" class="panel-body">
+                            Owned Property
+                            </div>
+                        </div>
+                            <!-- <div class="panel panel-primary">
+                                <div id="allReq" onclick="all_requestes()" class="panel-body">
+                                All Requestes
+                                </div>
+                            </div> -->
+                            <!-- <div class="panel panel-info">
+                                <div onclick="add_property()" class="panel-body">
+                                add Propertys
+                                </div>
+                            </div> -->
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-9" id="right_div">
+
+                <div class="col-sm-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <h3>welCome</h3>
+                            <h5>select tabs on the left to start</h5>
+                            <!-- <button class="btn btn-sm btn-info">apply</button> -->
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modal_body">
+              
+            </div>
+            <div class="modal-footer" id="modalfooter">
+              <br>
+              <div id="chekOut">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+</body>
+<!-- <script src="main.js"></script> -->
+<script src="../js/common.js"></script>
+<script src="../js/property_manager.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+
+</html>
